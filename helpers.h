@@ -4,6 +4,15 @@
 #include <iostream>
 #include <string>
 
+enum Direction {
+    UP,
+    DOWN,
+    LEFT,
+    RIGHT,
+    NONE
+};
+
+
 template <typename T>
 void print_vec(std::vector<T> vec, std::string delim = "") {
     for (const auto& element : vec) {
@@ -11,6 +20,15 @@ void print_vec(std::vector<T> vec, std::string delim = "") {
     }
     std::cout << std::endl;
 }
+
+template <typename T>
+void print_set(std::set<T> vec, std::string delim = "") {
+    for (const auto& element : vec) {
+        std::cout << element << delim;
+    }
+    std::cout << std::endl;
+}
+
 
 template <typename T>
 void print_2D_vec(std::vector<T> vec, std::string delim = "") {

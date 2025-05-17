@@ -35,12 +35,6 @@ struct TrailMap {
     int num_cols;
 };
 
-enum Direction {
-    UP,
-    DOWN,
-    LEFT,
-    RIGHT
-};
 
 void print_vec(vector<Coord> vec) {
     for (const auto& element : vec) {
